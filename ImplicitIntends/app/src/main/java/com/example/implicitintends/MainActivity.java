@@ -1,6 +1,7 @@
 package com.example.implicitintends;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ShareCompat;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -53,11 +54,23 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void  btnLocation_Click(){
+    public void btnShare_Click(){
+        String txt = share.getText().toString();
+        String mimeType = "text/plain";
+        new ShareCompat.IntentBuilder(this)
+                .setType(mimeType)
+                .setChooserTitle(R.string.share_testua)
+                .setText(txt)
+                .startChooser();
 
     }
 
-    public void  btnShare_Click(){
+    public void btnLocation_Click(){
+        String loc = location.getText().toString();
+
+        Uri addressUri = Uri.parse("geo:0,0?q=" + loc);
+        Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
+        startActivity(intent);
 
     }
 }
