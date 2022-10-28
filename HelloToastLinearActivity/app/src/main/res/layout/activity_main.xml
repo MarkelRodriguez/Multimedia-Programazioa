@@ -19,12 +19,12 @@
         android:id="@+id/TextViewkontua"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F6D55C"
-        android:text="@string/kontua"
-        android:textSize="160sp"
-        android:textAlignment="center"
         android:layout_weight="1"
-        android:gravity="center"/>
+        android:background="#F6D55C"
+        android:gravity="center"
+        android:text="@string/kontua"
+        android:textAlignment="center"
+        android:textSize="160sp" />
 
 
     <Button

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kalkulagailua</string>
+    <string name="zenbaki1">1.Zenbakia</string>
+    <string name="zenbaki2">2.Zenbakia</string>
+    <string name="hurrengoa">Hurrengoa</string>
+
 </resources>

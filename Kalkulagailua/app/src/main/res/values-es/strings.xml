@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="zenbaki1">1.Numero</string>
+    <string name="zenbaki2">2.Numero</string>
+    <string name="hurrengoa">Siguiente</string>
+</resources>
